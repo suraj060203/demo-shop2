@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Products from './components/Products';
+import NewProduct from './components/NewProduct';
 
 const App = () => {
   const products =[
@@ -18,7 +19,7 @@ const App = () => {
   },
   {
     id: 'p3',
-    title: "Surf Excel",
+    title: "Surf Exel",
     amount: 150,
     date: new Date(2023, 5, 25)
   },
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <div>
+    <NewProduct />
       <Products items={products} />
     </div>
 
